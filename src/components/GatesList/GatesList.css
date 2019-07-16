@@ -1,0 +1,36 @@
+.gatesdata{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.gate1{
+    order: 5
+}
+.gate2{
+    order: 4
+}
+.gate3{
+    order: 3
+}
+.gate4{
+    order: 2
+}
+.gate5{
+    order: 1
+}
+
+
+.tab{
+    color: #fff;
+    font-weight: 800;
+    margin: 0 10px;
+    cursor:pointer;
+}
+
+.active{
+    color:#333;
+    background-color: #fff;
+    border-radius: 19px;
+    padding: 3px 5px;
+}

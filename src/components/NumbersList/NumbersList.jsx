@@ -1,0 +1,24 @@
+import React, { Component } from 'react'
+import SingleNumber from '../SingleNumber/SingleNumber';
+import './NumbersList.css';
+
+export class NumbersList extends Component {
+
+    state = {
+        arrList:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28]
+    }
+    render() {
+        const {arrList} = this.state;
+        return (
+            <div className="numberListContainer">
+                {
+                    arrList.map((num, index) => {
+                        return  <SingleNumber item={num} key={index}/>
+                    })
+                }
+            </div>
+        )
+    }
+}
+
+export default NumbersList

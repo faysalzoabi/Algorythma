@@ -1,0 +1,8 @@
+.numberUnit{
+    border:1px solid #ddd;
+    border-radius: 10px;
+    margin:10px 10px;
+    width: 60px;
+    padding: 15px 0;
+    text-align: center;
+}

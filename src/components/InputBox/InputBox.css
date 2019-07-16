@@ -1,0 +1,15 @@
+.inputboxWrapper{
+    flex-basis: 35%;
+}
+
+.inputLabel{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.inputField{
+    padding: 8px;
+    border-radius: 5px;
+    width: 90%;
+}
