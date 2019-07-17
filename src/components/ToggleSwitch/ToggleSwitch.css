@@ -1,0 +1,10 @@
+.react-switch-bg{
+    height: 10px !important;
+    width: 33px !important;
+}
+
+.react-switch-handle {
+    width: 17px !important;
+    height: 17px !important;
+    top: 5px !important;
+}

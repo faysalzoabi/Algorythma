@@ -4,7 +4,7 @@ import './DropDown.css';
 export default function DropDown() {
     return (
         <label class="dropdown">
-            <span>كلمة</span>
+            {/* <span>كلمة</span> */}
             <div>
             <div class="dd-button">
             القائمة المنسدلة

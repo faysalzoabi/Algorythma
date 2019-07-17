@@ -24,7 +24,7 @@
 .tab{
     color: #fff;
     font-weight: 800;
-    margin: 0 10px;
+    margin: 0 18px;
     cursor:pointer;
 }
 
@@ -33,4 +33,11 @@
     background-color: #fff;
     border-radius: 19px;
     padding: 3px 5px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .tab{
+        margin: 0 15px;
+    }
 }

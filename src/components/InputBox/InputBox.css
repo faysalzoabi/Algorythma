@@ -1,6 +1,3 @@
-.inputboxWrapper{
-    flex-basis: 35%;
-}
 
 .inputLabel{
     display:flex;
@@ -10,6 +7,16 @@
 
 .inputField{
     padding: 8px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
     border-radius: 5px;
-    width: 90%;
+    width: 370px;
+    height: 35px;
 }
+
+
+@media only screen and (max-width: 1024px) {
+        .inputField{
+            width: 250px;
+        }
+    }

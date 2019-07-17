@@ -21,13 +21,13 @@ this.setState({
 
 render() {
     return (
-        <div className="datepicking">
+        <span className="datepicking">
             <DatePicker
             selected={this.state.startDate}
             onChange={this.handleChange}
             dateFormat="d MMMM yyyy"
             />
-        </div>
+        </span>
     );
 }
 }

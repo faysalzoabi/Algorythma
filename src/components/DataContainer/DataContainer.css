@@ -1,0 +1,7 @@
+.dataAddressContainer{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #f6f6f6;
+    padding-bottom: 30px;
+}
+
