@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { FaSearch } from 'react-icons/fa';
+import { MdSearch, MdNotifications} from "react-icons/md";
 import './Search.css';
 
 export class Search extends Component {
 
     state = {
-        searchCity:''
+        search:'',
+        notification:5
         }
     
     handleChange = event => {
@@ -14,19 +15,26 @@ export class Search extends Component {
     }
     
     render() {
+        const{notification} = this.state;
     return (
-        <div className="searchCityContainer">
-            <div className="searchCityContents">
-                <input type="text" name="searchRestaurant" onChange={this.handleChange} className="searchCityInput" placeholder="Search your area ..."/>
+        <div className="searchContainer">
+            <div className="bell">
+                <span className="bellcontents">
+                    <MdNotifications />
+                    <span className="notification">{notification}</span>
+                </span>
             </div>
             <div className="searchIconContents">
                 <span className="searchIcon">
-                    <FaSearch/>
+                    <MdSearch className="mdicon"/>
                 </span>
+            </div>
+            <div className="searchContents">
+                <input type="text" name="search" onChange={this.handleChange} className="searchInput" placeholder="بحث"/>
             </div>
         </div>
     )
-    }
+        }
     }
     
     export default Search

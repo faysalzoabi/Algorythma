@@ -1,0 +1,138 @@
+.header{
+    background: #fff;
+    text-align: center;
+    position: relative;
+    height: 70px;
+    z-index: 9999;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding-top: 20px;
+}
+
+.header > h2 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    align-items: center;
+    color: #8b8989;
+}
+
+
+.nav-toggle{
+    display: none;
+}
+
+
+.notification-container{
+    position: absolute;
+    top:0;
+    left:13px;
+    font-size: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* width: 10%; */
+}
+
+.notificationIcon{
+    position: absolute;
+    background-color: #de696b;
+    border-radius: 50px;
+    color:#fff;
+    padding: 0px 5px;
+    left: 23px;
+    top: 25px;
+    font-size: 12px;
+}
+.nav-toggle-label {
+    position: absolute;
+    top:0;
+    right:0;
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: #cfcfcf;
+    height: 5px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content:'';
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom:8px;
+}
+
+.nav-toggle-label span::after{
+    top: 8px;
+}
+
+.nav-toggle-label {
+    cursor: pointer;
+}
+
+nav {
+    text-align: right;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    width:100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav li:hover {
+    background: #f6f6f6;
+    cursor: pointer;
+}
+
+.nav-toggle:checked ~ nav {
+    transform:scale(1,1);
+}
+
+.nav-toggle:checked ~ nav li {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+
+@media only screen and (min-width : 1224px) {
+    .header{
+        display: none;
+    }
+}

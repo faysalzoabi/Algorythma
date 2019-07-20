@@ -1,31 +1,20 @@
-.gatesdata{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.gatesContainer{
+    margin: 0 13px;
 }
 
-.gate1{
-    order: 5
-}
-.gate2{
-    order: 4
-}
-.gate3{
-    order: 3
-}
-.gate4{
-    order: 2
-}
-.gate5{
-    order: 1
+.gatesdata{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
 }
 
 
 .tab{
     color: #fff;
     font-weight: 800;
-    margin: 0 18px;
+    margin: 0 15px;
     cursor:pointer;
+    font-size: 17px;
 }
 
 .active{
@@ -35,9 +24,16 @@
     padding: 3px 5px;
 }
 
-
+/* iPads (portrait) ----------- */
 @media only screen and (max-width: 1024px) {
     .tab{
         margin: 0 15px;
     }
 }
+/* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
+@media only screen and (max-width : 640px) {
+    .gatesdata{
+        display:none;
+    }
+}
+

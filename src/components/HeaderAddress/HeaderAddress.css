@@ -4,3 +4,17 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.address > h2 {
+    color:#5b5b5b;
+}
+
+
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (max-width : 1224px) {
+    .addressContainer{
+        display: none;
+    }
+}

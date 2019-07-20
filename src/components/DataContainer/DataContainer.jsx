@@ -42,6 +42,11 @@ export class DataContainer extends Component {
                     return <DataElements element={item} key={item.id}/> 
                 })
                 }
+
+                <div className="btnsGroup_mobile">
+                    <button className="x-btn btn">&times;</button>
+                    <button className="save-btn btn">حفظ</button>
+                </div>
             </div>
         )
     }

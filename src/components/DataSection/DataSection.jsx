@@ -6,7 +6,7 @@ import DataContainer from '../DataContainer/DataContainer';
 
 export default function DataSection() {
     return (
-        <div className= "dataContainer">
+        <section className= "dataContainer">
             <GatesList/>
             <div className="dataContents">
                 <NumbersList/>
@@ -14,6 +14,6 @@ export default function DataSection() {
                         <DataContainer/>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

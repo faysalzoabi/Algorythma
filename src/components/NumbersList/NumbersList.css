@@ -2,7 +2,7 @@
     margin-top: 20px;
     display: flex;
     flex-direction:row-reverse;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -10,7 +10,7 @@
 
 
 
-
+/* Desktops and laptops ----------- */
 @media only screen and (max-width: 1438px) {
     .numberListContainer{
         display: flex;

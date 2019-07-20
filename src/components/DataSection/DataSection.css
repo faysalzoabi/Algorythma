@@ -1,7 +1,7 @@
 .dataContainer{
     max-width: 80%;
     min-height: 400px;
-    background-color:#06A8DF;
+    background-color:#48a3d4;
     margin: 20px auto 0 auto;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -24,6 +24,12 @@
 }
 
 .datadetails{
-    width:95%; 
+    width:99%; 
     margin: 20px auto 0;
+}
+
+@media only screen and (max-width : 640px) {
+    .datadetails{
+        width:93%; 
+    }
 }

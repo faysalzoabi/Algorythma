@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import SingleNumber from '../SingleNumber/SingleNumber';
 import './NumbersList.css';
 
+
 export class NumbersList extends Component {
 
     state = {
@@ -17,6 +18,8 @@ export class NumbersList extends Component {
                         return  <SingleNumber  item={num} key={index}  />
                     })
                 }
+
+                
             </div>
         )
     }

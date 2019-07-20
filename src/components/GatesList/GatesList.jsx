@@ -1,6 +1,6 @@
 import React from 'react'
 import './GatesList.css';
-
+import DropDownGates from '../DropDownGates/DropDownGates';
 export default function GatesList() {
     return (
         <div className="gatesContainer">
@@ -11,6 +11,7 @@ export default function GatesList() {
                 <span className="tab gate4">تبويب ٤ </span>
                 <span className="tab gate5">تبويب ٥</span>
             </div>
+            <DropDownGates/>
         </div>
     )
 }

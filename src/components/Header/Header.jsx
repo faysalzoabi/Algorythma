@@ -12,26 +12,24 @@ export default function Header() {
                 <HeaderAddress/>
             </div>
             <div className="inputsWrapper">
-                <div className="btn-group">
-                    <button className="x-btn btn">X</button>
+                <div className="item-1">
+                    <button className="x-btn btn">&times;</button>
                     <button className="save-btn btn">حفظ</button>
                 </div>
-                <div className="input-group"> 
-                    <div className="selectorContainer">
-                        <span>تنتهي في</span>
-                        <DataInput />
-                    </div>
-                    <div className="selectorContainer">
-                        <span>يبدأ في</span>
-                        <DataInput/>
-                    </div>
-                    <div className="selectorContainer">
-                        <span>كلمة</span>
-                        <DropDown/>
-                    </div>
-                    <div className="inputContainer">
-                        <InputBox />
-                    </div>
+                <div className="grid-item item-3">
+                    <span className="inputlabel">تنتهي في</span>
+                    <DataInput />
+                </div>
+                <div className="grid-item item-4">
+                    <span className="inputlabel">يبدأ في</span>
+                    <DataInput/>
+                </div>
+                <div className="grid-item item-5">
+                    <span className="inputlabel">كلمة</span>
+                    <DropDown/>
+                </div>
+                <div className="item-6">
+                    <InputBox />
                 </div>
             </div>
         </div>

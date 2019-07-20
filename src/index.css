@@ -1,14 +1,32 @@
-* {
+
+:root{
+  --background:#EEEEEE;
+}
+
+@font-face {
+  font-family: 'Dubai';
+  font-style: normal;
+  src: local('Dubai'), url('./fonts/Dubai-Regular.ttf') format('truetype');
+  
+}
+
+*, *::before, *::after{
   box-sizing: border-box;
+}
+
+
+* {
   margin: 0;
   padding: 0;
 }
 
 
 body {
-  background-color: #EEEEEE;
+  background-color: var(--background);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-size:1.1em;
+  line-height:1.4;
+  font-family: "Dubai", "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,4 +40,42 @@ code {
 
 ul{
   list-style: none;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+input[type="text"]::placeholder {  
+  text-align: right; 
+} 
+
+
+p {
+  margin:0;
+  padding:1em 0;
+  font-size: 14px;
 }

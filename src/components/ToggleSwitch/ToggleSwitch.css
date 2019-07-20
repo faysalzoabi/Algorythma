@@ -8,3 +8,12 @@
     height: 17px !important;
     top: 5px !important;
 }
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (max-width : 1224px) {
+    .react-switch-bg{
+        width: 23px !important;
+    }
+
+}

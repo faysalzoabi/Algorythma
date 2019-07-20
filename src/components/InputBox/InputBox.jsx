@@ -6,8 +6,8 @@ export default function InputBox() {
     <div className="inputboxWrapper">
         <form>
             <label className="inputLabel">
-                <span>العنوان</span> 
-                <input className="inputField" type="text" name="name" />
+                <span className="labelTitle">العنوان</span> 
+                <input className="inputField" type="text" name="name" placeholder="عنوان ما"/>
             </label>
         </form>  
     </div>
